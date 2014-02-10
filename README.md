@@ -19,7 +19,7 @@ Issues
 
 Changes
 -------
-
+4. Installed YiiStrap and YiiWheels
 3. Installed the original http://www.yiiframework.com/extension/audittrail/, choosing over this one - https://github.com/Sammaye/audittrail
 2.Added Rights and changed Rights-> "class RWebUser extends CWebUser" -> "class RWebUser extends WebUser". This fixes login error.(WebUser was introduced by Yii-user)
 1.Added Yii-User

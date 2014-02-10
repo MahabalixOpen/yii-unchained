@@ -11,6 +11,15 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+	
+	//aliases
+	'aliases' => array(
+        // yiistrap configuration
+        'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), // change if necessary
+        // yiiwheels configuration
+        'yiiwheels' => realpath(__DIR__ . '/../extensions/yiiwheels'), // change if necessary
+    ),
+	
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -21,12 +30,14 @@ return array(
 		'application.modules.rights.*',
 		'application.modules.rights.components.*',
 		'application.modules.auditTrail.models.AuditTrail',
+		'bootstrap.helpers.TbHtml',
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
 		'gii'=>array(
+			'generatorPaths' => array('bootstrap.gii'),
 			'class'=>'system.gii.GiiModule',
 			'password'=>'Enter Your Password Here',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
@@ -97,6 +108,17 @@ return array(
 		
 		'authManager'=>array('class' => 'RDbAuthManager',),
 		// uncomment the following to enable URLs in path-format
+		
+		// yiistrap configuration
+        'bootstrap' => array(
+            'class' => 'bootstrap.components.TbApi',
+        ),
+		
+		 // yiiwheels configuration
+        'yiiwheels' => array(
+            'class' => 'yiiwheels.YiiWheels',   
+        ),
+		
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
