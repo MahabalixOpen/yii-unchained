@@ -86,5 +86,16 @@
 
 </div><!-- page -->
 
+<!-- LeftSide Bar and Right Side Bar -->
+<?php
+	/*
+	 *In case you want to use left and right sidebars you can 
+	 *uncomment the following code
+		$this->beginWidget('application.extensions.rightsidebar.RightSidebar');
+		//put your sidebar content here
+		$this->endWidget();
+	 * Replace right with left wherever appropriate. Use wisely!	
+	 */
+?>
 </body>
 </html>

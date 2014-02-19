@@ -16,7 +16,9 @@ Issues
 
 Changes
 -------
-5. Installed YiiSmartMenu
+7. Added unchained_resources dir that contains all software added.
+6. Added leftsidebar and rightsidebar to extensions (edited /layouts/main.php to add some comments)
+5. Installed YiiSmartMenu(edited /layouts/main.php to add some comments)
 4. Installed Yiistrap and YiiWheels
 3. Installed the original http://www.yiiframework.com/extension/audittrail/, choosing over this one - https://github.com/Sammaye/audittrail
 2.Added Rights and changed Rights-> "class RWebUser extends CWebUser" -> "class RWebUser extends WebUser". This fixes login error.(WebUser was introduced by Yii-user)
