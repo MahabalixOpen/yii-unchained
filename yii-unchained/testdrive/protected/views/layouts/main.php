@@ -42,6 +42,31 @@
 				array('url'=>array('/auditTrail'), 'label'=>'Audit Trail', 'visible'=>Yii::app()->user->isAdmin()),
 			),
 		)); ?>
+		
+		<?php
+		/* 
+		 *In case you want to use YiiSmartMenu, you can uncomment the following lines
+		 * YiiSmartMenu does a simple access check to see whether a menu item is accessible for current user
+		 * and decides whether a menu item should be visible or not
+		 *
+		 */
+		 /*$this->widget('application.components.YiiSmartMenu',
+			array(
+				'partItemSeparator'=>'.',	
+				'type'=>'pills',
+				'stacked'=>false,
+				'upperCaseFirstLetter'=>true,	
+				'items'=>array(				
+							array('label'=>'List article',
+							'url'=>array('index')),	
+							array('label'=>'Create article', 'url'=>array('create')),                 
+								),
+				));  
+		*/		
+		
+	
+		?>
+	
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
