@@ -119,6 +119,10 @@ return array(
             'class' => 'yiiwheels.YiiWheels',   
         ),
 		
+		//file extension
+		'file'=>array(
+        'class'=>'application.extensions.file.CFile',
+		),
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',

@@ -16,6 +16,7 @@ Issues
 
 Changes
 -------
+9. Added file extension https://github.com/idlesign/ist-yii-cfile for file manipulation
 8. Added edit area extension to yii-unchained(rich text editor) http://www.yiiframework.com/extension/editarea/
 7. Added unchained_resources dir that contains all software added.
 6. Added leftsidebar and rightsidebar to extensions (edited /layouts/main.php to add some comments)
